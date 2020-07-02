@@ -18,8 +18,10 @@ namespace ExamenMSSM
 
         public void cambiarJugador (Jugador player)
         {
-
+            string output = "Jugador de nombre " + player.Nombre + " se ha lesionado y es sacado por el entrenador.";
+            Console.WriteLine(output);
         }
+
 
     }
 }

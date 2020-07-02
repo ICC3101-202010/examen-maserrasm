@@ -18,11 +18,14 @@ namespace ExamenMSSM
             this.puntosExperiencia = _puntosExperiencia;
         }
 
+        //Evaluo puntos de ataque y de defensa del jugador. 
         public void evaluar (Jugador player)
         {
-
+            string output = "Jugador de nombre " + player.Nombre + " tiene "+player.puntosAtaque + " puntos de ataque y " + player.puntosDefensa + " puntos de defensa.";
+            Console.WriteLine(output);
         }
 
+        //Metodo curar aumenta puntos de ataque y de defensa. 
         public void curar (Jugador player)
         {
 

@@ -12,17 +12,25 @@ namespace ExamenMSSM
         public Entrenador teamCoach;
         public Medico teamMedic;
         bool esNacional;
-        
+
         //Constructor. 
         public Equipo(List<Jugador> _jugadores, Entrenador _teamCoach, Medico _teamMedic, bool _esNacional)
         {
             this.jugadores = _jugadores; this.teamCoach = _teamCoach; this.teamMedic = _teamMedic;
             this.esNacional = _esNacional;
+
+            //Cuando creo un equipo, suscribo el evento de que se lesione un jugador al metodo 
+            //cambiar jugador del entrenador para cada uno de los jugadores. Esto simula que el jugador le avisa al entrenador cuando
+            //se lesiona para que lo saquen. 
+
+            for (int i = 0; i < jugadores.Count(); i++)
+            {
+                jugadores[i].lesionEvent += new Jugador.lesionEventHandler(teamCoach.cambiarJugador);
+            }
+
         }
-
-
-        //Funcion que checkea la nacionalidad de los jugadores. 
-        public bool checkNacionalidad()
+            //Funcion que checkea la nacionalidad de los jugadores. 
+            public bool checkNacionalidad()
         {
             if (esNacional == true)
             {

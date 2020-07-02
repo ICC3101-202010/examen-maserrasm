@@ -12,7 +12,6 @@ namespace ExamenMSSM
         public int numCamiseta { get; set; }
         public bool esArquero { get; set; }
 
-
         //Constructor. 
         public Jugador(string _Nombre, int _Edad, string _Nacion, int _Sueldo, bool _esArquero)
         {
@@ -22,9 +21,17 @@ namespace ExamenMSSM
             this.Sueldo = _Sueldo; 
         }
 
-        void onLesionarse()
-        {
+        //Delegate y evento cuando un jugador se lesiona. 
+        public delegate void lesionEventHandler(Jugador player);
+        public event lesionEventHandler lesionEvent;
 
+        public void onLesionarse()
+        {
+            //Invoco el evento. 
+            if (lesionEvent != null)
+            {
+                lesionEvent.Invoke(this);
+            }
         }
 
 

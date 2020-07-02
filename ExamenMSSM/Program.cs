@@ -25,6 +25,20 @@ namespace ExamenMSSM
 
             Equipo seleccionChilena = new Equipo(equipo, c1, m1, true);
             seleccionChilena.checkNacionalidad();
+
+
+
+            //Ahora juguemos un poco. 
+
+            //Pruebo que se lesionen algunos jugadores. 
+
+
+
+
+            p1.onLesionarse(); p2.onLesionarse(); 
+
+
+
         }
     }
 }
