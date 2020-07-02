@@ -14,6 +14,9 @@ namespace ExamenMSSM
         public Medico teamMedic;
         bool esNacional;
 
+
+        //Si equipo no es nacional, se asume que es de liga. 
+
         //Constructor. 
         public Equipo(string _nombre, List<Jugador> _jugadores, Entrenador _teamCoach, Medico _teamMedic, bool _esNacional)
         {
@@ -44,6 +47,8 @@ namespace ExamenMSSM
             //Funcion que checkea la nacionalidad de los jugadores. 
             public bool checkNacionalidad()
         {
+
+            //Solo checkeo si es nacional, sino no tiene sentido. 
             if (esNacional == true)
             {
                 //Comparo nacionalidad de todos con todos. 
