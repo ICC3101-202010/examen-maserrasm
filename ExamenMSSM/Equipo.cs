@@ -12,7 +12,8 @@ namespace ExamenMSSM
         public List<Jugador> jugadores;
         public Entrenador teamCoach;
         public Medico teamMedic;
-        bool esNacional;
+        public bool esNacional;
+        public string nacionalidad { get; set; }
 
 
         //Si equipo no es nacional, se asume que es de liga. 
@@ -81,6 +82,35 @@ namespace ExamenMSSM
         {
             string output = "Nombre de equipo es " + this.nombre + " , Coach es " + this.teamCoach.Nombre + " Doc es " + this.teamMedic.Nombre ;
             Console.WriteLine(output);
+
+            if (this.esNacional == true)
+            {
+                Console.WriteLine("Equipo es nacional de nacionalidad " + this.nacionalidad);
+            }
+
+            Console.WriteLine("");
+            Console.WriteLine("Jugadores son:");
+
+            for (int i = 0; i < this.jugadores.Count(); i++)
+            {
+                Console.WriteLine(jugadores[i].Nombre);
+            }
+
+        }
+
+        public void addPlayer(Jugador player)
+        {
+            if (this.esNacional == true && string.Compare(player.Nacion, this.nacionalidad) == 0)
+            {
+                this.jugadores.Add(player);
+                Console.WriteLine("Jugador agregado con exito.");
+                return;
+            }
+            else 
+            {
+                Console.WriteLine("Jugador no se puede agregar, es de nacionalidad distinta.");
+                return; 
+            }
         }
 
     }

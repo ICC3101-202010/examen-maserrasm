@@ -36,11 +36,12 @@ namespace ExamenMSSM
             //Creo un equipo.
 
             Equipo seleccionChilena = new Equipo("Equipo Chileno", equipo, c1, m1, true);
+            seleccionChilena.nacionalidad = "Chile";
 
             //Creo algunos jugadores. 
 
-            Jugador p11p = new Jugador("Claudio Bravo", 33, "Peru", 10000, true);
-            Jugador p21 = new Jugador("Ismael Fuentes", 20, "Peru", 10000, false);
+            Jugador p11p = new Jugador("Pedro Bravo", 33, "Peru", 10000, true);
+            Jugador p21 = new Jugador("Fuentes", 20, "Peru", 10000, false);
             Jugador p31 = new Jugador("Waldo Ponce", 22, "Peru", 10000, false);
             Jugador p41 = new Jugador("Mauricio Isla", 25, "Peru", 10000, false);
             Jugador p51 = new Jugador("Pablo Contreras", 25, "Peru", 10000, false);
@@ -66,6 +67,7 @@ namespace ExamenMSSM
             //Creo otro equipo.
 
             Equipo seleccionPeruana = new Equipo("Equipo Peruano", equipo2, c11, m11, true);
+            seleccionPeruana.nacionalidad = "Peru";
 
             Partido final = new Partido(seleccionChilena, seleccionPeruana, 90, "2-1", true);
             final.mostrarResultados();
@@ -78,6 +80,12 @@ namespace ExamenMSSM
             //Finalmente muestro la info de los dos equipos.
 
             final.team1.mostrarInfo(); final.team2.mostrarInfo();
+
+
+            //Agrego un jugador de nacionalidad nada que ver. El programa arrojara error. 
+
+            Jugador p100 = new Jugador("Juan Perez", 33, "Rusia", 10000, false);
+            final.team1.addPlayer(p100);
 
 
         }
