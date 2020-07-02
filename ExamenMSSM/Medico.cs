@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ExamenMSSM
 {
-    public class Medico : Persona
+    public class Medico : Persona, ICambiarSueldo
     {
 
         public int puntosExperiencia { get; set; }
@@ -28,9 +28,15 @@ namespace ExamenMSSM
         //Metodo curar aumenta puntos de ataque y de defensa. 
         public void curar (Jugador player)
         {
-
+            player.puntosAtaque += 100;
+            player.puntosDefensa += 100; 
         }
 
-
+        public void cambiarSueldo()
+        {
+            Console.WriteLine("Ingrese nuevo sueldo: ");
+            int newSueldo = Convert.ToInt32(Console.ReadLine());
+            this.Sueldo = newSueldo;
+        }
     }
 }

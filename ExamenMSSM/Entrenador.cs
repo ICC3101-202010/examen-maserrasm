@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ExamenMSSM
 {
-    public class Entrenador : Persona
+    public class Entrenador : Persona, ICambiarSueldo
     {
         public int puntosTactica { get; set; }
         public Entrenador(string _Nombre, int _Edad, string _Nacion, int _Sueldo, int _puntosTactica)
@@ -22,6 +22,11 @@ namespace ExamenMSSM
             Console.WriteLine(output);
         }
 
-
+        public void cambiarSueldo()
+        {
+            Console.WriteLine("Ingrese nuevo sueldo: ");
+            int newSueldo = Convert.ToInt32(Console.ReadLine());
+            this.Sueldo = newSueldo;
+        }
     }
 }
