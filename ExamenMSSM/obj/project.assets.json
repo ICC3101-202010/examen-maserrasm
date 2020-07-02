@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manuel\\Dropbox\\UANDES\\2020\\POO\\Examen\\ExamenMSSM\\ExamenMSSM\\ExamenMSSM.csproj",
+      "projectUniqueName": "C:\\Users\\Manuel\\examen-maserrasm\\ExamenMSSM\\ExamenMSSM.csproj",
       "projectName": "ExamenMSSM",
-      "projectPath": "C:\\Users\\Manuel\\Dropbox\\UANDES\\2020\\POO\\Examen\\ExamenMSSM\\ExamenMSSM\\ExamenMSSM.csproj",
+      "projectPath": "C:\\Users\\Manuel\\examen-maserrasm\\ExamenMSSM\\ExamenMSSM.csproj",
       "packagesPath": "C:\\Users\\Manuel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manuel\\Dropbox\\UANDES\\2020\\POO\\Examen\\ExamenMSSM\\ExamenMSSM\\obj\\",
+      "outputPath": "C:\\Users\\Manuel\\examen-maserrasm\\ExamenMSSM\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Manuel\\AppData\\Roaming\\NuGet\\NuGet.Config",

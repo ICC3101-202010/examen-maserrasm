@@ -15,5 +15,13 @@ namespace ExamenMSSM
             this.team1 = _team1; this.team2 = _team2; this.duracion = _duracion; this.resultado = _resultado;
             this.esNacional = _esNacional; 
         }
+
+        public void mostrarResultados()
+        {
+            string output1 = "En este partido jugaron el equipo " + team1.nombre + " y el equipo " + team2.nombre;
+            Console.WriteLine(output1);
+            string output2 = "El resultado fue: " + this.resultado;
+            Console.WriteLine(output2);
+        }
     }
 }

@@ -11,3 +11,16 @@ C:\Users\Manuel\Dropbox\UANDES\2020\POO\Examen\ExamenMSSM\ExamenMSSM\obj\Debug\n
 C:\Users\Manuel\Dropbox\UANDES\2020\POO\Examen\ExamenMSSM\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.dll
 C:\Users\Manuel\Dropbox\UANDES\2020\POO\Examen\ExamenMSSM\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.pdb
 C:\Users\Manuel\Dropbox\UANDES\2020\POO\Examen\ExamenMSSM\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.genruntimeconfig.cache
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\bin\Debug\netcoreapp3.1\ExamenMSSM.exe
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\bin\Debug\netcoreapp3.1\ExamenMSSM.deps.json
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\bin\Debug\netcoreapp3.1\ExamenMSSM.runtimeconfig.json
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\bin\Debug\netcoreapp3.1\ExamenMSSM.runtimeconfig.dev.json
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\bin\Debug\netcoreapp3.1\ExamenMSSM.dll
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\bin\Debug\netcoreapp3.1\ExamenMSSM.pdb
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.csprojAssemblyReference.cache
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.csproj.CoreCompileInputs.cache
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.AssemblyInfoInputs.cache
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.AssemblyInfo.cs
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.dll
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.pdb
+C:\Users\Manuel\examen-maserrasm\ExamenMSSM\obj\Debug\netcoreapp3.1\ExamenMSSM.genruntimeconfig.cache

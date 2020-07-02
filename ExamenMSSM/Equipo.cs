@@ -8,16 +8,20 @@ namespace ExamenMSSM
     public class Equipo
     {
         //Params. de un equipo.
+        public string nombre { get; set; }
         public List<Jugador> jugadores;
         public Entrenador teamCoach;
         public Medico teamMedic;
         bool esNacional;
 
         //Constructor. 
-        public Equipo(List<Jugador> _jugadores, Entrenador _teamCoach, Medico _teamMedic, bool _esNacional)
+        public Equipo(string _nombre, List<Jugador> _jugadores, Entrenador _teamCoach, Medico _teamMedic, bool _esNacional)
         {
+
+            Console.WriteLine("Construyendo equipo...");
+
             this.jugadores = _jugadores; this.teamCoach = _teamCoach; this.teamMedic = _teamMedic;
-            this.esNacional = _esNacional;
+            this.esNacional = _esNacional; this.nombre = _nombre; 
 
             //Cuando creo un equipo, suscribo el evento de que se lesione un jugador al metodo 
             //cambiar jugador del entrenador para cada uno de los jugadores. Esto simula que el jugador le avisa al entrenador cuando
@@ -27,6 +31,14 @@ namespace ExamenMSSM
             {
                 jugadores[i].lesionEvent += new Jugador.lesionEventHandler(teamCoach.cambiarJugador);
             }
+
+
+            //Despues de suscribir los eventos, checkeo la nacionalidad de los integrantes del equipo emplenado 
+            //el metodo que defini mas abajo. 
+
+            Console.WriteLine("Checkeando nacionalidad de jugadores:");
+            this.checkNacionalidad(); 
+
 
         }
             //Funcion que checkea la nacionalidad de los jugadores. 
@@ -59,5 +71,12 @@ namespace ExamenMSSM
             return false;
 
         }
+
+        public void mostrarInfo()
+        {
+            string output = "Nombre de equipo es " + this.nombre + " , Coach es " + this.teamCoach.Nombre + " Doc es " + this.teamMedic.Nombre ;
+            Console.WriteLine(output);
+        }
+
     }
 }
